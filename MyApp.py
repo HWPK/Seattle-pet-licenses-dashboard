@@ -111,13 +111,6 @@ ax3.set_title("Top 25 ZIP Codes")
 ax3.tick_params(axis='x', rotation=45)
 st.pyplot(fig3)
 
-# --- MAP (optional) ---
-if 'Latitude' in df.columns and 'Longitude' in df.columns:
-    st.markdown("### 📘 What this shows:\nThis map shows pet locations based on GPS data.")
-    st.subheader("🗺️ Map of Pet Licenses by Location")
-    map_df = filtered_df[['Latitude', 'Longitude']].dropna()
-    st.map(map_df)
-
 # --- FILTERED DATA TABLE ---
 st.markdown("---")
 st.header("📄 View Filtered Data")
