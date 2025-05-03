@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Seattle Pet Licenses Dashboard", layout="wide")
 
 # Load data
-df = pd.read_csv('Seattle_Pet_Licenses_Final.csv')
+df = pd.read_csv('Seattle_Pet_Licenses_Cleaned.csv')
 
 # Sidebar
 st.sidebar.header("🔎 Filter the Data")
